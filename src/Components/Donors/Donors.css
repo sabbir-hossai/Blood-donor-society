@@ -1,0 +1,10 @@
+.donors{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-right: 1px solid gray;
+     
+}
+.donors-cart h3{
+    margin-top: 20px;
+    text-align: center;
+}

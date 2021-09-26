@@ -1,0 +1,25 @@
+ .donor{
+     margin:10px;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+ }
+ .row{
+     margin-left: 10px;
+     margin-bottom: 20px;
+ }
+ .ab{
+     background-color:lightgray;
+ }
+ .img-container{
+     
+    height: 200px;
+ }
+ .img-container img{
+    border-radius: 55%;
+ }
+ .img-container img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+ }
