@@ -2,8 +2,9 @@ import React from 'react';
 import './Donor.css';
 
 const Donor = (props) => {
-    console.log(props.donor)
-    const { name, id, img, salary, profession, age, counry } = props.donor;
+    // console.log(props.donor)
+
+    const { name, id, img, bloodDonate, profession, age, counry } = props.donor;
     return (
         <div class="row ">
             <div class="col">
@@ -16,9 +17,9 @@ const Donor = (props) => {
                         <p class="card-text"><small>Age:{age}</small> </p>
                         <p class="card-text"><small>Country:{counry}</small> </p>
                         <p class="card-text"><small>Doner id:{id}</small> </p>
-                        <p class="card-text"><small>Salary: ${salary}</small> </p>
+                        <p class="card-text"><small>BloodDonate: {bloodDonate}</small> </p>
                         <p class="card-text"><small>Profession: {profession}</small> </p>
-                        <button class="btn btn-primary" >Blood donate</button>
+                        <button onClick={() => props.bloodDonateHandel(props.donor)} class="btn btn-primary" >Blood donate</button>
                     </div>
                 </div>
             </div>
